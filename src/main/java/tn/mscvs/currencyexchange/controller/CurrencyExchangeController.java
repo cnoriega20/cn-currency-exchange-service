@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class CurrencyExchangeController {
 
     @GetMapping("/currency-exchange/get")
-    public Exchange getExchangeValue(@RequestParam("from") String from,
+    public Exchange getExchangeRate(@RequestParam("from") String from,
                                      @RequestParam("to") String to){
         return Exchange.builder().
                 id(1L)
